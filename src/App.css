@@ -1,0 +1,21 @@
+body,
+html,
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  flex-shrink: 0; /* Empêche l'en-tête de se rétrécir */
+}
+
+footer {
+  flex-shrink: 0;
+}
