@@ -1,0 +1,47 @@
+.home-article {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 15px) / 2);
+  height: 35vh;
+  border: solid 1px #2baeb7;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.home-article-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-offer-pic {
+  height: 84%;
+}
+.home-offer-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+  aspect-ratio: 1/2;
+}
+
+.home-product-details {
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  padding-right: 5px;
+}
+
+.home-product-details div {
+  overflow: hidden;
+  height: 1rem;
+}
+
+.home-product-details p {
+  width: 100%;
+  text-align: right;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}

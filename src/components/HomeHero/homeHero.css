@@ -1,0 +1,28 @@
+.home-in-hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.home-in-hero img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.home-in-hero h1 {
+  font-size: 1.3rem;
+}
+.in-hero-btn {
+  background-color: #2baeb7;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  height: 3vh;
+  width: fit-content;
+}

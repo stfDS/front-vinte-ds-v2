@@ -1,8 +1,34 @@
 .homeMain {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-.homeMain h1 {
-  font-size: 50px;
+
+.home-hero {
+  height: 30vh;
+  width: 100%;
+}
+
+.home-offers {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paging {
+  margin-top: auto;
+  height: fit-content;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.paging button {
+  background-color: #2baeb7;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  height: 3vh;
+  width: fit-content;
 }
