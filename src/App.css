@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 body,
 html,
 #root {
+  font-family: "Opens Sans", Arial, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,8 +11,6 @@ html,
 
 main {
   flex: 1;
-  width: 95%;
-  margin: 0 auto;
 }
 
 header {
@@ -18,4 +19,10 @@ header {
 
 footer {
   flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
