@@ -18,7 +18,7 @@
 .paging {
   margin-top: auto;
   height: fit-content;
-  padding: 7px;
+  padding: 5px;
   display: flex;
   justify-content: space-around;
 }
