@@ -1,8 +1,12 @@
 import "./footer.css"
+import { Link } from "react-router-dom"
+
 const Footer = () => {
   return (
     <footer>
-      <h1>Footer</h1>
+      <Link to="https://stefane-ds.netlify.app" target="blank">
+        <h3>Crée par Stefane Dos Santos Silva</h3>
+      </Link>
     </footer>
   )
 }

@@ -1,6 +1,22 @@
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.login-logo-mobile {
+  height: 100%;
+  font-size: 20px;
+}
+.log-sell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.login-mobile-btn {
+  border: none;
+  background: none;
+  width: fit-content;
+  padding: 0;
 }
