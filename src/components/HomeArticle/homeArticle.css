@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   width: calc((100% - 15px) / 2);
-  height: 35vh;
+  max-width: 200px;
+  height: 230px;
   border: solid 1px #2baeb7;
   border-radius: 10px;
   font-size: 0.9rem;
@@ -17,7 +18,7 @@
 }
 
 .home-offer-pic {
-  height: 84%;
+  height: 80%;
 }
 .home-offer-pic img {
   height: 100%;
@@ -30,7 +31,8 @@
 .home-product-details {
   display: flex;
   flex-direction: column;
-  height: 15%;
+  justify-content: space-between;
+  height: 20%;
   padding-right: 5px;
 }
 
@@ -39,7 +41,7 @@
   height: 1rem;
 }
 
-.home-product-details p {
+.home-product-details div p {
   width: 100%;
   text-align: right;
   font-size: 0.8rem;

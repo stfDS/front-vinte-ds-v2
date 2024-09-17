@@ -8,17 +8,8 @@ html,
   display: flex;
   flex-direction: column;
 }
-
 main {
   flex: 1;
-}
-
-header {
-  flex-shrink: 0; /* Empêche l'en-tête de se rétrécir */
-}
-
-footer {
-  flex-shrink: 0;
 }
 
 a {
