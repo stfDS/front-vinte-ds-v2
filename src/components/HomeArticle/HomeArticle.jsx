@@ -4,8 +4,7 @@ import { Link } from "react-router-dom"
 const HomeArticle = ({ offer }) => {
   return (
     <article className="home-article">
-      {/* <Link to={`/offer/${offer._id}`} className="home-article-link"> */}
-      <Link className="home-article-link">
+      <Link to={`/offer/${offer._id}`} className="home-article-link">
         <div className="home-offer-pic">
           {offer.product_pictures[0].secure_url && (
             <img src={offer.product_pictures[0].secure_url} alt="" />

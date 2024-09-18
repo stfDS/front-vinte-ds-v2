@@ -1,0 +1,53 @@
+.article-page-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.article-page-image {
+  display: flex;
+  justify-content: center;
+  height: 370px;
+  width: 90%;
+}
+.article-page-image img {
+  height: 100%;
+  object-fit: cover;
+}
+.article-page-pictures {
+  display: flex;
+  gap: 3px;
+  height: 370px;
+  width: 95%;
+}
+.article-page-pictures div:first-child {
+  flex: 3;
+}
+.article-page-pictures div {
+  flex: 1;
+}
+.article-page-pictures div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.offer-page-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.offer-info-txt {
+  display: flex;
+}
+.p-left,
+.p-right {
+  margin-top: 10px;
+  width: 50%;
+  font-size: 0.9rem;
+  color: #555;
+}
