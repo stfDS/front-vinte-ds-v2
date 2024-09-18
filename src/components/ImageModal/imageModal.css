@@ -23,8 +23,8 @@
   border-radius: 8px;
   outline: none;
   width: fit-content;
-  height: fit-content;
-  max-height: 100vh;
+  /* height: fit-content; */
+  max-height: 90vh;
   max-width: 800px;
 }
 .modal-content {
