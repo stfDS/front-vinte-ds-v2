@@ -22,8 +22,8 @@
   padding: 10px;
   border-radius: 8px;
   outline: none;
-  width: fit-content;
-  /* height: fit-content; */
+  min-width: 30vh;
+  min-height: 50vh;
   max-height: 90vh;
   max-width: 800px;
 }
