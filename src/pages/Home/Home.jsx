@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { DataContext } from "../../context/data.context"
 import HomeHero from "../../components/HomeHero/HomeHero"
 import HomeArticle from "../../components/HomeArticle/HomeArticle"
-import Searchbar from "../../components/SearchBar/SearchBar"
+import Searchbar from "../../components/Searchbar/Searchbar"
 
 const Home = () => {
   const { data, count, isLoading, skip, setSkip } = useContext(DataContext)
