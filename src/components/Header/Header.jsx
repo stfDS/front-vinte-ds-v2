@@ -12,7 +12,8 @@ const Header = () => {
         />
       </Link>
       <div className="log-sell">
-        <Link to="/publish" className="sell-link">
+        {/* <Link to="/publish" className="sell-link"> */}
+        <Link className="sell-link">
           <button>vend tes articles</button>
         </Link>
         <button className="login-mobile-btn">
