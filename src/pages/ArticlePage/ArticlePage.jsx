@@ -78,7 +78,7 @@ const ArticlePage = () => {
         )}
         <div className="offer-page-info">
           <div className="offer-info-txt">
-            <p className="p-left">Prix</p>
+            <p className="p-left">PRIX</p>
             <p className="p-right">{dataOffer.product_price} €</p>
           </div>
           {dataOffer.product_details.map(detail => {
@@ -91,6 +91,14 @@ const ArticlePage = () => {
               </div>
             )
           })}
+          <div className="offer-owner-div">
+            <div className="owner-avatar">
+              <img src={dataOffer.owner.account.avatar} alt="" />
+            </div>
+            <div className="owner-username">
+              <p>{dataOffer.owner.account.username}</p>
+            </div>
+          </div>
         </div>
       </section>
       <ImageModal
