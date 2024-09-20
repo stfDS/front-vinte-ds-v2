@@ -1,6 +1,6 @@
 import Select from "react-select"
 import "./sortFilter.css"
-import { DataContext } from "../context/data.context"
+import { DataContext } from "../context/Data.context"
 import { useContext } from "react"
 import { options } from "../Utils/Options"
 

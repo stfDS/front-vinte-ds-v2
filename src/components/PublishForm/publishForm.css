@@ -1,0 +1,28 @@
+.publish-form-container {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.publish-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-publish-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.input-publish-form input:focus,
+.input-publish-form textarea:focus {
+  border-color: #2baeb7;
+  box-shadow: 0 0 5px rgba(43, 174, 183, 0.5);
+  outline: none;
+}
+.input-publish-form input {
+  font-size: 1rem;
+}

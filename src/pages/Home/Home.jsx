@@ -1,12 +1,16 @@
 import "./home.css"
-import { useContext } from "react"
-import { DataContext } from "../../context/data.context"
+import { useContext, useEffect } from "react"
+import { DataContext } from "../../context/Data.context"
 import HomeHero from "../../components/HomeHero/HomeHero"
 import HomeArticle from "../../components/HomeArticle/HomeArticle"
 import Searchbar from "../../components/Searchbar/Searchbar"
 
 const Home = () => {
   const { data, count, isLoading, skip, setSkip } = useContext(DataContext)
+
+  useEffect(() => {
+    sessionStorage.setItem("skip", skip)
+  }, [skip])
 
   const handleNextClick = () => {
     if (skip + 10 < count) {

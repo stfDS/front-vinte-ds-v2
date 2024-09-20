@@ -8,11 +8,15 @@ export const DataProvider = ({ children }) => {
   const [data, setData] = useState()
   const [isLoading, setIsLoading] = useState(true)
   const [search, setSearch] = useState("")
-  const [skip, setSkip] = useState(0)
   const [count, setCount] = useState()
   const [priceMin, setPriceMin] = useState("")
   const [priceMax, setPriceMax] = useState("")
-  const [sortPrice, setSortPrice] = useState("") //asc ou desc
+  const [sortPrice, setSortPrice] = useState("")
+
+  const [skip, setSkip] = useState(() => {
+    const savedSkip = sessionStorage.getItem("skip")
+    return savedSkip ? Number(savedSkip) : 0 // 0 si rien n'est sauvegardé
+  })
 
   useEffect(() => {
     const fetchData = async () => {

@@ -1,22 +1,37 @@
 header {
+  height: 5vh;
+  max-height: 50px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5px;
 }
 
-.login-logo-mobile {
+.login-logo {
   height: 100%;
   font-size: 20px;
 }
+
 .log-sell {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.login-mobile-btn {
+.log-header-btn {
   border: none;
   background: none;
   width: fit-content;
   padding: 0;
+}
+
+.sell-link button {
+  background-color: #2baeb7;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 2px 6px;
+  border: none;
+  min-height: 2vh;
+  width: fit-content;
 }

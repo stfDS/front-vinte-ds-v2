@@ -5,6 +5,7 @@
 
 .home-hero {
   height: 30vh;
+  min-height: 200px;
   width: 100%;
 }
 .searchbar-section {
@@ -29,8 +30,7 @@
   justify-content: space-around;
 }
 
-.paging button,
-.sell-link button {
+.paging button {
   background-color: #2baeb7;
   color: white;
   font-size: 0.8rem;
