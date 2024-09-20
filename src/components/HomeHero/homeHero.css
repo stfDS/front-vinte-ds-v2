@@ -18,12 +18,13 @@
 .home-in-hero h1 {
   font-size: 1.3rem;
 }
-.in-hero-btn {
+.in-hero-btn button {
   background-color: #2baeb7;
   color: white;
   font-size: 0.8rem;
   border-radius: 5px;
   border: none;
   min-height: 3vh;
+  padding: 5px 10px;
   width: fit-content;
 }

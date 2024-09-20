@@ -16,7 +16,7 @@ const ImageModal = ({
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Image Modal"
-      className="modal"
+      className="image-modal"
       overlayClassName="overlay"
     >
       <div className="modal-content">

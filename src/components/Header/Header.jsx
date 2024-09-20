@@ -1,8 +1,12 @@
 import "./header.css"
 import { Link } from "react-router-dom"
-import { FaUserAlt } from "react-icons/fa"
+import LoginModal from "../LoginModal/LoginModal"
+import { useContext } from "react"
+import { AuthContext } from "../../context/AuthContext.provider"
+import UserModal from "../UserModal/UserModal"
 
 const Header = () => {
+  const { isAuthenticated } = useContext(AuthContext)
   return (
     <header>
       <Link to="/" className="logotop">
@@ -13,12 +17,15 @@ const Header = () => {
       </Link>
       <div className="log-sell">
         {/* <Link to="/publish" className="sell-link"> */}
-        <Link className="sell-link">
-          <button>vend tes articles</button>
-        </Link>
-        <button className="login-mobile-btn">
-          <FaUserAlt className="login-logo-mobile" />
-        </button>
+        {isAuthenticated ? (
+          <Link className="sell-link">
+            <button>vend tes articles</button>
+          </Link>
+        ) : (
+          <LoginModal txt={"Vend tes articles"} className={"sell-link"} />
+        )}
+
+        {isAuthenticated ? <UserModal /> : <LoginModal />}
       </div>
     </header>
   )

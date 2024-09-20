@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.modal {
+.image-modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,6 @@
 .modal-image-div {
   display: flex;
   justify-content: center;
-  max-height: 100vh;
 }
 
 .modal-image-div img {

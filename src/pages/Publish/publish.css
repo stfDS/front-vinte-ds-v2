@@ -1,0 +1,18 @@
+.publish-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.publish-form-section {
+  border: solid 1px #2baeb7;
+  box-shadow: 15px 15px 15px rgba(43, 174, 183, 0.5);
+
+  width: 80%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+.publish-page-title {
+  font-size: 1.5rem;
+}

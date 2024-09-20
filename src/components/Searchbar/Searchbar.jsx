@@ -1,6 +1,6 @@
 import "./searchbar.css"
 import { useContext, useState } from "react"
-import { DataContext } from "../../context/data.context"
+import { DataContext } from "../../context/Data.context"
 import { FaSearch } from "react-icons/fa"
 import SortFilter from "../../Filters/SortFilter"
 

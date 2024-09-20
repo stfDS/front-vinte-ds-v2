@@ -1,7 +1,12 @@
+import { useContext } from "react"
+import { AuthContext } from "../../context/AuthContext.provider"
 import "./homeHero.css"
 import { Link } from "react-router-dom"
+import LoginModal from "../LoginModal/LoginModal"
 
 const HomeHero = () => {
+  const { isAuthenticated } = useContext(AuthContext)
+
   return (
     <div className="home-in-hero">
       <img
@@ -9,10 +14,13 @@ const HomeHero = () => {
         alt=""
       />
       <h1>Prêts à faire du tri dans vos placards ?</h1>
-
-      <Link to="/publish">
-        <button className="in-hero-btn">Commencer à vendre</button>
-      </Link>
+      {isAuthenticated ? (
+        <Link className="in-hero-btn" to="/publish">
+          <button>Commencer à vendre</button>
+        </Link>
+      ) : (
+        <LoginModal txt={"Commencer à vendre"} className={"in-hero-btn"} />
+      )}
     </div>
   )
 }
